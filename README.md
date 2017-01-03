@@ -1,5 +1,5 @@
 # Current Features
-<blockquote class="imgur-embed-pub" lang="en" data-id="a/WvZJx"><a href="//imgur.com/WvZJx"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+!["gif of walkthrough"]("http://imgur.com/a/WvZJx")
 
 ## Gems/plugins used
 - Facebook commenting plugin
