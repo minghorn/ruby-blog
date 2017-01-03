@@ -1,5 +1,5 @@
 # Current Features
-<img src='http://imgur.com/a/WvZJx' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<blockquote class="imgur-embed-pub" lang="en" data-id="a/WvZJx"><a href="//imgur.com/WvZJx"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 
 ## Gems/plugins used
 - Facebook commenting plugin
