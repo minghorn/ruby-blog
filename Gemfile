@@ -16,6 +16,11 @@ gem 'coffee-rails', '~> 4.2'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
+# Use Administrate
+gem 'administrate', '~> 0.3.0'
+# Use bourbon
+gem 'bourbon', '~> 4.2'
+gem 'neat'
 # Use foundation
 gem 'foundation-rails'
 # Use jquery as the JavaScript library

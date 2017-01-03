@@ -1,0 +1,75 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ *= require foundation_and_overrides
+ */
+@import 'bourbon';
+
+$color-1 : #18121E;
+$color-2 :  #233237;
+$highlight-1 : #984B43;
+$highlight-2 : #EAC67A;
+$transition: all 0.35s ease-in-out;
+
+.header {
+	text-align: center;
+	background: $color-2;
+	background-size: cover;
+	position: relative;
+	overflow: visible;
+	padding-top: 2.5rem;
+	padding-bottom: 4.9rem;
+}
+	.header .headline {
+		color: white;
+	}
+	.header .headline a {
+		color: white;
+	}
+	.header .headline a.is-active {
+		color: $highlight-2;
+	}
+	.header .headline a:hover {
+		color: $highlight-2;
+		transition: $transition;
+	}
+.header-subnav {
+	float: none;
+	position: absolute;
+	text-align: center;
+	margin: 0 auto;
+	bottom: 0;
+	width: 100%;
+}
+	.header-subnav li {
+		float: none;
+		display: inline-block;
+	}
+		.header-subnav li a {
+			padding: .9rem 1rem;
+			font-size: 0.75rem;
+			color: white;
+			text-transform: uppercase;
+			display: block;
+			font-weight: bold;
+			letter-spacing: 1px;
+			transition: $transition;
+		}
+		.header-subnav li a.is-active {
+			background: $highlight-1;
+		}
+		.header-subnav li a:hover {
+			background: $highlight-1;
+			transition: $transition;
+		}

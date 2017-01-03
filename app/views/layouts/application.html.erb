@@ -4,16 +4,23 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title><%= content_for?(:title) ? yield(:title) : "Untitled" %></title>
+    <title><%= yield(:title) %></title>
 
     <%= stylesheet_link_tag    "application" %>
+	<%= stylesheet_link_tag "http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css" %>
     <%= javascript_include_tag "application", 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
   </head>
 
   <body>
-
-    <%= yield %>
-
+	<header class="header">
+	<h1 class="headline"><a href="/">Demosthenes x  Locke</a></h1>
+		<ul class="header-subnav">
+			<li><%= link_to 'Home', '/' %></li>
+			<li><%= link_to 'Blog', 'posts' %></li>
+			<li><%= link_to 'Authors', "#" %></li>
+			<li><%= link_to 'Dashboard', 'admin' %></li>
+		<ul>
+	</header>
   </body>
 </html>
