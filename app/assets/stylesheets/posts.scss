@@ -1,3 +1,27 @@
 // Place all the styles related to the Posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+$color-1 : #18121E;
+$color-2 :  #233237;
+$highlight-1 : #984B43;
+$highlight-2 : #EAC67A;
+$transition: all 0.35s ease-in-out;
+$post-line-height: 1.5; 
+$blog-margin: 1rem;
+
+.row {
+	max-width: 75rem;
+	margin-left: auto;
+	margin-right: auto;
+}
+.blog-post {
+	color: $color-1;
+	line-height: $post-line-height;
+	margin-top: $blog-margin;
+}
+	.blog-post h4 {
+		font-size: 90%;
+	}
+	.blog-post h4 small {
+		color: $color-2;
+	}

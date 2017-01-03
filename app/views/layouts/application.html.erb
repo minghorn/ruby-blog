@@ -7,7 +7,6 @@
     <title><%= yield(:title) %></title>
 
     <%= stylesheet_link_tag    "application" %>
-	<%= stylesheet_link_tag "http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css" %>
     <%= javascript_include_tag "application", 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
   </head>
@@ -22,5 +21,6 @@
 			<li><%= link_to 'Dashboard', 'admin' %></li>
 		<ul>
 	</header>
+	<%= yield %>
   </body>
 </html>
