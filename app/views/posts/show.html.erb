@@ -10,9 +10,7 @@
 <%= content_for(:title, @post.title) %>
 <div class="row medium-8 large-7 columns">
 	<div class="blog-post">
-		<h3><%= @post.title %></h3>
-		<h4><%= @post.author %> | <small><%= @post.updated_at %></small></h4>
-		<p><%= @post.body %></p>
+		<%= render @post %>
 	</div>
 	<div class="fb-comments" data-href="http://localhost:3000/posts/<%= @post.id %>" data-width="100%" data-numposts="5"></div>
 </div>

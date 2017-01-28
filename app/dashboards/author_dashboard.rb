@@ -1,6 +1,6 @@
 require "administrate/base_dashboard"
 
-class PostDashboard < Administrate::BaseDashboard
+class AuthorDashboard < Administrate::BaseDashboard
   # ATTRIBUTE_TYPES
   # a hash that describes the type of each of the model's fields.
   #
@@ -9,10 +9,9 @@ class PostDashboard < Administrate::BaseDashboard
   # on pages throughout the dashboard.
   ATTRIBUTE_TYPES = {
     id: Field::Number,
-    title: Field::String,
-    author_name: Field::String,
-	author_id: Field::Number,
-    body: Field::Text,
+    name: Field::String,
+    bio: Field::Text,
+    photo_url: Field::String,
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
   }.freeze
@@ -24,18 +23,18 @@ class PostDashboard < Administrate::BaseDashboard
   # Feel free to add, remove, or rearrange items.
   COLLECTION_ATTRIBUTES = [
     :id,
-    :title,
-    :author_name,
-    :body,
+    :name,
+    :bio,
+    :photo_url,
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
   # an array of attributes that will be displayed on the model's show page.
   SHOW_PAGE_ATTRIBUTES = [
     :id,
-    :title,
-    :author_name,
-    :body,
+    :name,
+    :bio,
+    :photo_url,
     :created_at,
     :updated_at,
   ].freeze
@@ -44,16 +43,15 @@ class PostDashboard < Administrate::BaseDashboard
   # an array of attributes that will be displayed
   # on the model's form (`new` and `edit`) pages.
   FORM_ATTRIBUTES = [
-    :title,
-    :author_name,
-	:author_id,
-    :body,
+    :name,
+    :bio,
+    :photo_url,
   ].freeze
 
-  # Overwrite this method to customize how posts are displayed
+  # Overwrite this method to customize how authors are displayed
   # across all pages of the admin dashboard.
   #
-  # def display_resource(post)
-  #   "Post ##{post.id}"
+  # def display_resource(author)
+  #   "Author ##{author.id}"
   # end
 end

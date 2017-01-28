@@ -9,9 +9,7 @@ module Admin
     before_action :authenticate_admin
 
     def authenticate_admin
-		authenticate_or_request_with_http_digest do |username|
-			USERS[username]
-		end
+      # TODO Add authentication logic here.
     end
 
     # Override this value to specify the number of elements to display at a time
