@@ -18,6 +18,7 @@
 
 $color-1 : #18121E;
 $color-2 :  #233237;
+$color-3 : #336600;
 $highlight-1 : #984B43;
 $highlight-2 : #EAC67A;
 $transition: all 0.35s ease-in-out;
@@ -73,3 +74,10 @@ $transition: all 0.35s ease-in-out;
 			background: $highlight-1;
 			transition: $transition;
 		}
+a {
+	color: $color-3;
+}
+a.is-active, a:hover {
+	color: $highlight-1;
+	transition: $transition;
+}

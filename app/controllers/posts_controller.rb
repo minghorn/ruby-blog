@@ -1,9 +1,11 @@
 class PostsController < ApplicationController
 	def index
 		@posts = Post.all
+		@show_post_link = true
 	end
 	def show
 		@post = Post.find(params[:id])
+		@show_post_link = false
 	end
 	def new
 		@post = Post.new

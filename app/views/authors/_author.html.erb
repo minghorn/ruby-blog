@@ -1,5 +1,12 @@
-<div class="author" id="<%= author.name %>">
-	<img src="<%= author.photo_url %>" alt="Headshot of <%= author.name %>" />
-	<h3<%= author.name %></h3>
-	<p><%= author.bio %></p>
+<div class="row" id="<%= author.name %>">
+	<div class="small-6 columns">
+		<img src="<%= author.photo_url %>" alt="Headshot of <%= author.name %>" />
+	</div>
+	<div class="small-6 columns">
+		<h3><%= author.name %></h3>
+		<p><%= author.bio %></p>
+		<% if @show_more %>
+			<%= link_to "See articles by #{author.name}", author_path(author) %>
+		<% end %>
+	</div>
 </div>

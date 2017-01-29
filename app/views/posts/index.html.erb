@@ -1,9 +1,8 @@
 <%= content_for(:title, "Blog") %>
-<div class="row medium-8 large-7 columns">
+<div class="medium-8 large-7 columns">
 	<% @posts.each do |p| %>
 		<div class="blog-post">
 			<%= render p %>
-			<%= link_to 'Read more', post_path(p) %>
 		</div>
 	<% end %>
 </div>

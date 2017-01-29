@@ -11,7 +11,7 @@ class PostDashboard < Administrate::BaseDashboard
     id: Field::Number,
     title: Field::String,
     author_name: Field::String,
-	author_id: Field::Number,
+	author: Field::BelongsTo,
     body: Field::Text,
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
@@ -46,7 +46,7 @@ class PostDashboard < Administrate::BaseDashboard
   FORM_ATTRIBUTES = [
     :title,
     :author_name,
-	:author_id,
+	:author,
     :body,
   ].freeze
 

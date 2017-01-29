@@ -16,10 +16,15 @@
 	<h1 class="headline"><a href="/">Demosthenes x  Locke</a></h1>
 		<ul class="header-subnav">
 			<li><%= link_to 'Home', '/' %></li>
-			<li><%= link_to 'Authors', "#" %></li>
+			<li><%= link_to 'Authors', "/authors" %></li>
 			<li><%= link_to 'Dashboard', '/admin' %></li>
 		<ul>
 	</header>
-	<%= yield %>
+	<div class="row">
+		<%= yield %>
+		<div class="medium-2 columns" id="sidebar">
+			<p>Lorem ipsum dolor sit amet</p>	
+		</div>
+	</div>
   </body>
 </html>
